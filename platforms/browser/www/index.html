@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Random Quotes</title>
+    </head>
+
+    <body id="page">
+        <div class="title"><h1>Random Quote Terminal</h1></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-sm-0" ></div>
+                <div class="col-md-8 col-sm-12" >
+                    <img src="img/header.png" alt="terminal header" class="img-responsive" id="header"/>
+                    <div id="terminal">
+                        <p class="user">tamoxin@codepen:~$ <span id="user"></span></p>
+                        <div id="quote"></div>
+                        <div id="author"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-0" ></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-0"></div>
+                <div class="col-md-8 col-sm-12">
+                    <button class="btn btn-info buttons" id="about"><i class="fa fa-info-circle"></i> About</button>
+                    <a target="_blank" href="#" class="btn btn-primary buttons" id="share-quote"><i class="fa fa-twitter"></i> Tweet</a>
+                    <button class="btn buttons" id="new-quote" ><i class="fa fa-quote-left"></i> <i class="fa fa-quote-right"></i> New quote</button>
+                </div>
+                <div class="col-md-2 col-sm-0"></div>
+            </div>
+        </div>
+    </body>
+</html>
