@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!-- I don't know exactly how this makes it work, but it does -->
+        <!-- It has to do with cordova security principles -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' http:">
+
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -28,7 +31,7 @@
                 <div class="col-md-8 col-sm-12" >
                     <img src="img/header.png" alt="terminal header" class="img-responsive" id="header"/>
                     <div id="terminal">
-                        <p class="user">tamoxin@codepen:~$ <span id="user"></span></p>
+                        <p class="user">user@randomQuote:~$ <span id="user"></span></p>
                         <div id="quote"></div>
                         <div id="author"></div>
                     </div>

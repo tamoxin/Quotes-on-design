@@ -1,5 +1,3 @@
-var user = "tamoxin@codepen:~$ ";
-
 var shareLink = "";
 
 var command = "";
@@ -11,6 +9,7 @@ var quote;
 var author;
 
 var insertText = function(){
+  jQuery.support.cors = true;
   $.ajax({
       url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
       success: function(a) {
@@ -52,7 +51,7 @@ var insertAbout = function(){
 
 var newQuote = function(){
   $(clr);
-  command = "sudo ./randomQuote.py^400..^100..^100.^100.^300";
+  command = "./quotes.sh^400.^200.^200.^200";
   $("#user").typed({
     strings: [command],
     typeSpeed: -900,
@@ -115,18 +114,3 @@ var app = {
 };
 
 app.initialize();
-
-// $(document).ready(function(){
-//     $(newQuote);
-//     // new quote
-//     $("#new-quote").on("click", newQuote);
-
-//     //about
-//     $("#about").on("click", about);
-
-//     //share quote
-//     $("#share-quote").on("click", function(){
-//         $("#share-quote").attr("href", shareLink);
-//     });
-// });
-

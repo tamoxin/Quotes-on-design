@@ -17,7 +17,7 @@
        under the License.
  */
 
-package me.marcocarrizales.randomQuote;
+package me.marcocarrizales.quotesOnDesign;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
