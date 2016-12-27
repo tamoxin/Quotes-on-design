@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="me.marcocarrizales.randomQuote" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Random Quotes 3</name>
+<widget id="me.marcocarrizales.quotesOnDesign" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Quotes on design</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Random quotes about design.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="a00512098@itesm.mx" href="http://marcocarrizales.me">
+        Marco Carrizales
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -15,4 +15,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="StatusBarBackgroundColor" value="#130914" />
+    <preference name="Orientation" value="portrait" />
 </widget>
